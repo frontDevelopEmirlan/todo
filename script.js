@@ -4,6 +4,7 @@ let input3 = document.querySelector(".input3");
 let btn = document.querySelector(".createBtn");
 let list = document.querySelector(".list");
 
+read()
 btn.addEventListener("click", () => {
   if (!input1.value.trim() || !input2.value.trim() || !input3.value.trim()) {
     alert("Заполните поле");
