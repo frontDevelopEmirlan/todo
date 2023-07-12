@@ -1,0 +1,186 @@
+body {
+  background: rgb(95, 92, 16);
+  background: linear-gradient(
+    90deg,
+    rgba(95, 92, 16, 1) 0%,
+    rgba(223, 234, 28, 1) 52%,
+    rgba(95, 92, 16, 1) 100%
+  );
+}
+
+.todo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.block {
+  background-color: #234545;
+  width: 270px;
+  height: 340px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.h1 {
+  color: #fff;
+  font-family: "Montserrat";
+}
+.input1,
+.input2,
+.input3 {
+  margin: 10px;
+  width: 200px;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+.createBtn {
+  margin-top: 20px;
+  width: 140px;
+  height: 40px;
+  font-size: 20px;
+  background-color: cadetblue;
+  color: #234545;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-family: "sans - serif";
+}
+.createBtn:hover {
+  color: #fff;
+}
+
+.list {
+  background-color: #234545;
+  width: 550px;
+  height: 340px;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.list::-webkit-scrollbar {
+  width: 7px;
+  background-color: #234545;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: cadetblue;
+  border-radius: 3px;
+}
+
+.info {
+  background-color: cadetblue;
+  display: flex;
+  height: 70px;
+  width: 450px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 50px;
+  border-radius: 20px;
+}
+
+.text {
+  width: 250px;
+  display: block;
+  text-align: start;
+}
+
+.p1,
+.p2 {
+  margin: 0;
+  font-size: 15px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #fff;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+}
+
+.image {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.del {
+  background-color: #234545;
+  color: cadetblue;
+  border: none;
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.del:hover {
+  color: #fff;
+  background-color: #091616;
+}
+
+.fon {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 300px;
+  bottom: 0;
+  left: -150px;
+  z-index: -50;
+  opacity: 0.5;
+}
+
+.fon1 {
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  background-color: aquamarine;
+  top: -200px;
+  right: 0;
+  z-index: -50;
+  border-bottom-left-radius: 200px;
+  opacity: 0.4;
+}
+
+.fon2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: -50;
+  background-color: yellowgreen;
+  opacity: 0.4;
+  top: 230px;
+  right: 300px;
+  border-radius: 100%;
+}
+
+.fon3 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: -50;
+  background-color: forestgreen;
+  opacity: 0.4;
+  top: -150px;
+  left: 120px;
+  border-radius: 100%;
+}
+
+.nit1 {
+  position: absolute;
+  top: 83px;
+  left: 130px;
+  width: 818px;
+  height: 225px;
+  border: 5px solid #234545;
+  z-index: -40;
+}
