@@ -163,13 +163,14 @@ body {
   align-items: center;
   border-radius: 20px;
   margin: 12px auto;
+  box-shadow: inset 2px -2px 20px #1c5959,
+    inset -2px 2px 20px #1c5959;
+  box-shadow: inset 2px 2px 20px #1c5959,
+    inset -2px -2px 20px #1c5959;
 }
 
 .info:hover {
-  box-shadow: inset 2px -2px 20px #234545,
-    inset -2px 2px 20px #234545;
-  box-shadow: inset 2px 2px 20px #234545,
-    inset -2px -2px 20px #234545;
+  box-shadow: none;
 }
 
 .text {
