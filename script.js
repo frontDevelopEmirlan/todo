@@ -90,6 +90,7 @@ function read() {
     list.append(divInfo);
 
     delBtn.addEventListener("click", () => {
+      alert('delete')
       del(index);
     });
     editBtn.addEventListener("click", () => {
@@ -143,4 +144,5 @@ saveBtn.addEventListener("click", () => {
   localStorage.setItem("person", JSON.stringify(data));
   read();
   editBlock.style.display = "none";
+  alert('edit')
 });
