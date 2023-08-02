@@ -115,9 +115,9 @@ let saveBtn = document.querySelector(".editBtn");
 function editContact(index) {
   let data = JSON.parse(localStorage.getItem("person")) || [];
 
-  updateInput1.setAttribute("index", index);
-  updateInput2.setAttribute("index", index);
-  updateInput3.setAttribute("index", index);
+  updateInput1.setAttribute("id", index);
+  updateInput2.setAttribute("id", index);
+  updateInput3.setAttribute("id", index);
 
   updateInput1.value = data[index].name;
   updateInput2.value = data[index].lastName;
@@ -126,10 +126,10 @@ function editContact(index) {
 
 saveBtn.addEventListener("click", () => {
   let data = JSON.parse(localStorage.getItem("person")) || [];
-  
-  let nameId = updateInput1.value;
-  let lastNameId = updateInput2.value;
-  let imgId = updateInput3.value;
+
+  let nameId = updateInput1.id
+  let lastNameId = updateInput1.id
+  let imgId = updateInput1.id
 
   let newObj = {
     name: updateInput1.value,
@@ -144,5 +144,5 @@ saveBtn.addEventListener("click", () => {
   localStorage.setItem("person", JSON.stringify(data));
   read();
   editBlock.style.display = "none";
-  alert('edit')
 });
+
